@@ -1,0 +1,30 @@
+@mixin arrow($direction) {
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+
+  @if $direction == up {
+    border-bottom-color: #000;
+  } @else if $direction == down {
+    border-top-color: #000;
+  } @else if $direction == right {
+    border-left-color: #000;
+  } @else if $direction == left {
+    border-right-color: #000;
+  }
+}
+
+@mixin fontFamily($name, $url) {
+  @font-face {
+    font-family: $name;
+    src: url($url);
+  }
+}
+
+@mixin transition {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin translateImages {
+  transform: translate(-10px, -10px);
+}

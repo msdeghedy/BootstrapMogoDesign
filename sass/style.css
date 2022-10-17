@@ -1,0 +1,328 @@
+@font-face {
+  font-family: KaushanScript;
+  src: url("../fonts/KaushanScript-Regular.ttf");
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.small-heading {
+  font-family: KaushanScript;
+}
+
+.main-heading {
+  font-family: Roboto-Bold;
+  margin-bottom: 4.8rem;
+}
+.main-heading::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5rem;
+  border-top: 5px solid #f38181;
+  left: 50%;
+  top: 4rem;
+  transform: translateX(-50%);
+}
+
+.hover-div {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#e03131, #ffa94d);
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.pro-img {
+  background-color: #95e1d3;
+}
+.pro-img img {
+  transition: all 0.5s ease-in-out;
+}
+.pro-img:hover img {
+  transform: translate(-10px, -10px);
+}
+.pro-img:hover .hover-div {
+  transform: translate(-10px, -10px);
+  opacity: 0.8;
+}
+
+.carousel-indicators [data-bs-target] {
+  text-indent: -140px;
+}
+
+.carousel-indicators [data-bs-target] span {
+  margin-top: 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #95e1d3;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: #fff;
+}
+
+header {
+  background-image: linear-gradient(RGBA(228, 61, 52, 0.7), RGBA(250, 150, 73, 0.7)), url("../images/bg-header.jpg");
+  background-size: cover;
+}
+header nav a {
+  border-bottom: 2px solid transparent;
+}
+header nav a:hover {
+  color: #fce38a !important;
+  border-bottom: 2px solid #fce38a;
+}
+header #section-hero {
+  height: calc(100vh - 96px);
+}
+header #section-hero .main-heading {
+  font-size: 6.2rem;
+}
+header #section-hero .main-heading::after {
+  top: 75%;
+  border-color: #fff;
+}
+header #section-hero .carousel-indicators [data-bs-target] {
+  flex: 1 1 auto;
+  position: relative;
+}
+
+#section-info .column {
+  padding-right: 0.9px;
+}
+#section-info .column:last-of-type {
+  padding-right: 0;
+}
+#section-info .column div.background-color {
+  background-color: #95e1d3;
+}
+
+#section-unique {
+  background-image: url("../images/unique-design/img-2.png"), url("../images/unique-design/img-3.PNG"), url("../images/unique-design/img-1.png"), url("../images/unique-design/bg-unique-design.jpg");
+  background-repeat: no-repeat, repeat-x, no-repeat, no-repeat;
+  background-position: 61% 102%, bottom, center bottom;
+}
+
+#section-what-we-do .accordion-button:not(.collapsed) {
+  background-color: #fff;
+}
+#section-what-we-do .accordion-content {
+  max-height: 170px;
+  overflow: scroll;
+}
+
+.section-testimonials-slider {
+  background-color: #f8f8f8;
+}
+.section-testimonials-slider .testimonial-quote {
+  font-family: Roboto;
+  color: #999;
+  font-size: 24px;
+}
+.section-testimonials-slider .testimonial-customer {
+  font-family: KaushanScript;
+}
+.section-testimonials-slider .testimonial-customer::before {
+  content: "______";
+  color: #f38181;
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.member-job {
+  color: #dfdfdf;
+  font-style: italic;
+}
+
+.member-name {
+  font-family: "Montserrat";
+}
+
+#section-who-are-we .icon {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  background-color: #fce38a;
+}
+#section-who-are-we .icon a {
+  text-decoration: none;
+  color: #f38181;
+}
+#section-who-are-we .icon:hover {
+  background-color: #f38181;
+}
+#section-who-are-we .icon:hover a {
+  text-decoration: none;
+  color: #fce38a;
+}
+#section-who-are-we .icon i {
+  font-size: 24px;
+  line-height: 2;
+}
+
+#section-brand {
+  background-color: #f8f8f8;
+}
+
+@media screen and (min-width: 567px) {
+  #section-services .remove-border-lg.last {
+    border: none !important;
+  }
+  #section-info .border-sm-top {
+    border-top: 1px solid #fff;
+  }
+}
+#section-our-work .hover-div {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#e03131, #ffa94d);
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+#section-our-work .pro-img {
+  background-color: #95e1d3;
+}
+#section-our-work .pro-img img {
+  transition: all 0.5s ease-in-out;
+}
+#section-our-work .pro-img:hover img {
+  transform: none;
+}
+#section-our-work .pro-img:hover .hover-div {
+  transform: none;
+  opacity: 0.8;
+}
+
+#section-what-people-say {
+  background-image: url("../images/happy-client/bg-happy-client.jpg");
+  background-size: cover;
+}
+#section-what-people-say .cust-quote {
+  color: #999;
+}
+#section-what-people-say .cust-job {
+  margin-bottom: 2.4rem;
+  color: #999;
+}
+#section-what-people-say .cust-job::after {
+  content: "";
+  color: #f38181;
+  display: block;
+  position: absolute;
+  width: 5rem;
+  border-top: 5px solid #f38181;
+  top: 148%;
+  left: 0;
+}
+
+#section-latest-blog .blog-date {
+  top: 45%;
+  left: -14px;
+  transform: translateY(-50%);
+  background-color: #95e1d3;
+}
+#section-latest-blog .blog-text {
+  color: #999;
+}
+#section-latest-blog .blog-icons {
+  color: #999;
+}
+#section-latest-blog .blog-icons i {
+  color: #95e1d3;
+}
+
+#section-map {
+  background-image: url("../images/map/bg-map.jpg");
+}
+#section-map button {
+  color: #f38181;
+}
+#section-map .open-map::after {
+  content: "";
+  color: #f38181;
+  display: block;
+  position: absolute;
+  width: 5rem;
+  border-top: 5px solid #f38181;
+  top: 148%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer {
+  background-color: #f8f8f8;
+}
+footer h1 {
+  color: #ccc;
+}
+footer .footer-text {
+  color: #999;
+}
+footer .follow-us {
+  color: #999;
+  font-style: italic;
+}
+footer .follow-us a {
+  color: #95e1d3;
+  margin-right: 10px;
+}
+footer input {
+  width: 60%;
+}
+footer input[type=submit] {
+  background-color: #95e1d3;
+  color: #fff;
+  width: 40%;
+}
+footer .footer-blog-wrapper {
+  gap: 3%;
+}
+footer .footer-blog-wrapper .footer-blog-img {
+  width: 37%;
+}
+footer .footer-blog-wrapper .footer-blog-text {
+  width: 60%;
+}
+footer .footer-blog-wrapper .footer-blog-text .footer-blog-date {
+  color: #999;
+}
+footer p span {
+  color: #f38181;
+}
+
+@media screen and (min-width: 768px) {
+  #section-services .remove-border-lg.fifth {
+    border: none !important;
+  }
+  #section-info .border-sm-top {
+    border-top: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  #section-services .remove-border-lg.fourth {
+    border: none !important;
+  }
+}/*# sourceMappingURL=style.css.map */
